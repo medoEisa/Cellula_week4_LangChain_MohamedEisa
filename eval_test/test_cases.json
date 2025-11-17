@@ -1,0 +1,118 @@
+[
+  {
+    "query": "What is supervised learning?",
+    "expected_output": "Supervised learning is a machine learning approach where models learn from labeled input-output pairs."
+  },
+  {
+    "query": "What is unsupervised learning?",
+    "expected_output": "Unsupervised learning is a method where models learn patterns from unlabeled data."
+  },
+  {
+    "query": "Define deep learning.",
+    "expected_output": "Deep learning is a subset of machine learning that uses neural networks with many layers to learn hierarchical features."
+  },
+  {
+    "query": "What is a neural network?",
+    "expected_output": "A neural network is a computational model inspired by the structure of biological neurons."
+  },
+  {
+    "query": "What is the purpose of activation functions?",
+    "expected_output": "Activation functions introduce non-linearity into neural networks, enabling them to learn complex relationships."
+  },
+  {
+    "query": "What is overfitting?",
+    "expected_output": "Overfitting occurs when a model learns noise or specific details from the training set and fails to generalize to new data."
+  },
+  {
+    "query": "What is underfitting?",
+    "expected_output": "Underfitting occurs when a model is too simple to capture the underlying structure of the data and performs poorly on both training and test sets."
+  },
+  {
+    "query": "What is gradient descent?",
+    "expected_output": "Gradient descent is an optimization algorithm that updates model parameters iteratively to minimize the loss function."
+  },
+  {
+    "query": "What is the purpose of a loss function?",
+    "expected_output": "A loss function measures the difference between model predictions and the true labels, guiding learning."
+  },
+  {
+    "query": "Explain cross-entropy loss.",
+    "expected_output": "Cross-entropy loss measures the difference between predicted probability distributions and true labels and is commonly used for classification."
+  },
+  {
+    "query": "What is accuracy in machine learning?",
+    "expected_output": "Accuracy is the ratio of correctly predicted samples to total samples."
+  },
+  {
+    "query": "What is precision?",
+    "expected_output": "Precision is the ratio of true positives to all predicted positives; it measures correctness among positive predictions."
+  },
+  {
+    "query": "What is recall?",
+    "expected_output": "Recall is the ratio of true positives to all actual positives; it measures how many relevant instances were retrieved."
+  },
+  {
+    "query": "What is F1 score?",
+    "expected_output": "F1 score is the harmonic mean of precision and recall, balancing both metrics."
+  },
+  {
+    "query": "What is regularization in ML?",
+    "expected_output": "Regularization reduces model complexity to prevent overfitting, for example via L1 or L2 penalties."
+  },
+  {
+    "query": "What is dropout?",
+    "expected_output": "Dropout is a regularization technique that randomly disables neurons during training to improve generalization."
+  },
+  {
+    "query": "What is batch normalization?",
+    "expected_output": "Batch normalization normalizes layer inputs within each mini-batch to stabilize and speed up training."
+  },
+  {
+    "query": "What is a convolutional neural network (CNN)?",
+    "expected_output": "A CNN is a deep learning model specialized for grid-like data such as images, using convolutional layers to detect local patterns."
+  },
+  {
+    "query": "What is a recurrent neural network (RNN)?",
+    "expected_output": "An RNN is a neural architecture for sequence data that uses recurrence to maintain hidden state across time steps."
+  },
+  {
+    "query": "What is LSTM?",
+    "expected_output": "LSTM is a type of RNN that uses gating mechanisms to capture long-term dependencies and mitigate vanishing gradients."
+  },
+  {
+    "query": "What is a transformer model?",
+    "expected_output": "A transformer is a neural architecture based on self-attention mechanisms to model relationships between tokens in a sequence."
+  },
+  {
+    "query": "Explain self-attention.",
+    "expected_output": "Self-attention computes attention scores between all token pairs, allowing the model to weigh the importance of other tokens for each token."
+  },
+  {
+    "query": "What is tokenization in NLP?",
+    "expected_output": "Tokenization is the process of splitting text into tokens (words/subwords) that NLP models can process."
+  },
+  {
+    "query": "What is BERT?",
+    "expected_output": "BERT is a transformer-based model trained with masked language modeling and designed for bidirectional context understanding."
+  },
+  {
+    "query": "What is fine-tuning?",
+    "expected_output": "Fine-tuning adapts a pre-trained model to a downstream task by continuing training on task-specific labeled data."
+  },
+  {
+    "query": "What is zero-shot learning?",
+    "expected_output": "Zero-shot learning enables a model to perform tasks without explicit training examples for that task, often via instruction or prompts."
+  },
+  {
+    "query": "What is a confusion matrix?",
+    "expected_output": "A confusion matrix is a table that summarizes true positives, false positives, true negatives, and false negatives."
+  },
+  {
+    "query": "What is feature engineering?",
+    "expected_output": "Feature engineering is the process of creating and selecting meaningful input features to improve model performance."
+  },
+  {
+    "query": "What is reinforcement learning?",
+    "expected_output": "Reinforcement learning is a paradigm where agents learn to take actions in an environment to maximize cumulative reward."
+  }
+]

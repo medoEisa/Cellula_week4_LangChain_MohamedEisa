@@ -1,0 +1,53 @@
+[
+    {
+      "id": "t1",
+      "query": "What is Artificial Intelligence?",
+      "expected_output": "Artificial Intelligence (AI) is a branch of computer science focused on building systems capable of performing tasks that typically require human intelligence."
+    },
+    {
+      "id": "t2",
+      "query": "What is machine learning?",
+      "expected_output": "Machine learning is a subset of AI that enables computers to learn patterns from data and make predictions or decisions without explicit programming."
+    },
+    {
+      "id": "t3",
+      "query": "What is deep learning?",
+      "expected_output": "Deep learning is a subset of machine learning that uses neural networks with multiple layers to learn representations of data."
+    },
+    {
+      "id": "t4",
+      "query": "Define natural language processing.",
+      "expected_output": "Natural language processing (NLP) is the field of AI concerned with enabling computers to understand, interpret, and generate human language."
+    },
+    {
+      "id": "t5",
+      "query": "What is supervised learning?",
+      "expected_output": "Supervised learning is a machine learning technique where models are trained on labeled data to predict outcomes for unseen inputs."
+    },
+    {
+      "id": "t6",
+      "query": "Explain unsupervised learning.",
+      "expected_output": "Unsupervised learning involves training models on unlabeled data to find hidden patterns or groupings, such as in clustering or dimensionality reduction."
+    },
+    {
+      "id": "t7",
+      "query": "What is reinforcement learning?",
+      "expected_output": "Reinforcement learning is a learning paradigm where agents learn by interacting with their environment and receiving rewards or penalties."
+    },
+    {
+      "id": "t8",
+      "query": "What is a neural network?",
+      "expected_output": "A neural network is a computational model inspired by the human brain, composed of interconnected layers of artificial neurons that process data."
+    },
+    {
+      "id": "t9",
+      "query": "What is transfer learning?",
+      "expected_output": "Transfer learning is the process of leveraging knowledge from one task or dataset to improve performance on another related task."
+    },
+    {
+      "id": "t10",
+      "query": "Explain the difference between AI and ML.",
+      "expected_output": "AI is the broader field aiming to simulate human intelligence, while ML is a subset that focuses on algorithms that learn from data."
+    }
+  ]
+  

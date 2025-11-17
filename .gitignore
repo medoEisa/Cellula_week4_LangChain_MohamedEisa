@@ -1,0 +1,44 @@
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.db
+
+# Virtual environment
+lang-env/
+venv/
+.env
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Logs and reports
+*.log
+*.csv
+*.tsv
+*.jsonl
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Streamlit cache
+.streamlit/
+
+# DeepEval or Chroma database
+chroma_db/
+CHROMA_DIR/
+
+# Config and secrets
+config.py
+*.env
+*.key
+*.pem
+
+# IDE/editor configs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace

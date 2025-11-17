@@ -1,0 +1,211 @@
+{
+  "What is supervised learning?": {
+    "answer": "Supervised learning is a machine learning approach where models learn from labeled input-output pairs.",
+    "contexts": [
+      "Supervised learning trains models using labeled datasets that contain the correct answers, allowing the model to learn to map inputs to outputs."
+    ]
+  },
+
+  "What is unsupervised learning?": {
+    "answer": "Unsupervised learning is a method where models learn patterns from unlabeled data.",
+    "contexts": [
+      "Unsupervised learning algorithms analyze and cluster unlabeled datasets, discovering hidden structures without known outputs."
+    ]
+  },
+
+  "Define deep learning.": {
+    "answer": "Deep learning is a subset of machine learning that uses neural networks with many layers to learn hierarchical features.",
+    "contexts": [
+      "Deep learning uses multi-layer neural networks to automatically learn feature representations from raw data."
+    ]
+  },
+
+  "What is a neural network?": {
+    "answer": "A neural network is a computational model inspired by the structure of biological neurons.",
+    "contexts": [
+      "Neural networks consist of layers of interconnected nodes that transform input data through learned weights."
+    ]
+  },
+
+  "What is the purpose of activation functions?": {
+    "answer": "Activation functions introduce non-linearity into neural networks.",
+    "contexts": [
+      "Activation functions such as ReLU, sigmoid, and tanh allow neural networks to learn complex non-linear relationships."
+    ]
+  },
+
+  "What is overfitting?": {
+    "answer": "Overfitting occurs when a model learns noise in the training data, reducing its performance on new data.",
+    "contexts": [
+      "Overfitting happens when a model memorizes training data patterns instead of generalizing to unseen data."
+    ]
+  },
+
+  "What is underfitting?": {
+    "answer": "Underfitting occurs when a model is too simple to learn the underlying structure of the data.",
+    "contexts": [
+      "Underfitting results in poor performance on both training and test data due to insufficient model complexity."
+    ]
+  },
+
+  "What is gradient descent?": {
+    "answer": "Gradient descent is an optimization algorithm that iteratively updates model parameters to minimize the loss function.",
+    "contexts": [
+      "Gradient descent computes gradients of the loss function and takes steps in the opposite direction to reduce error."
+    ]
+  },
+
+  "What is the purpose of a loss function?": {
+    "answer": "A loss function measures the difference between predictions and true values.",
+    "contexts": [
+      "Loss functions provide feedback during training by quantifying prediction error. Examples include cross-entropy and MSE."
+    ]
+  },
+
+  "Explain cross-entropy loss.": {
+    "answer": "Cross-entropy loss measures the difference between predicted probability distributions and true labels.",
+    "contexts": [
+      "Cross-entropy is widely used in classification because it penalizes incorrect confident predictions more heavily."
+    ]
+  },
+
+  "What is accuracy in machine learning?": {
+    "answer": "Accuracy is the ratio of correctly predicted samples to total samples.",
+    "contexts": [
+      "Accuracy is computed as (true positives + true negatives) divided by total predictions."
+    ]
+  },
+
+  "What is precision?": {
+    "answer": "Precision is the ratio of true positives to all predicted positives.",
+    "contexts": [
+      "Precision measures how many predicted positive values are actually correct."
+    ]
+  },
+
+  "What is recall?": {
+    "answer": "Recall is the ratio of true positives to all actual positives.",
+    "contexts": [
+      "Recall measures a model's ability to identify all relevant instances in the dataset."
+    ]
+  },
+
+  "What is F1 score?": {
+    "answer": "F1 score is the harmonic mean of precision and recall.",
+    "contexts": [
+      "The F1 score provides a balanced measure of precision and recall, particularly useful for imbalanced datasets."
+    ]
+  },
+
+  "What is regularization in ML?": {
+    "answer": "Regularization reduces model complexity to prevent overfitting.",
+    "contexts": [
+      "L1 and L2 regularization penalize large weights, encouraging simpler models that generalize better."
+    ]
+  },
+
+  "What is dropout?": {
+    "answer": "Dropout is a regularization technique where random neurons are disabled during training.",
+    "contexts": [
+      "Dropout prevents overfitting by randomly ignoring neurons, forcing the network to learn more robust features."
+    ]
+  },
+
+  "What is batch normalization?": {
+    "answer": "Batch normalization normalizes layer inputs to stabilize and accelerate training.",
+    "contexts": [
+      "Batch normalization reduces internal covariate shift by standardizing activations within each mini-batch."
+    ]
+  },
+
+  "What is a convolutional neural network (CNN)?": {
+    "answer": "A CNN is a deep learning model specialized for processing grid-like data such as images.",
+    "contexts": [
+      "CNNs use convolutional layers to detect local patterns in images, such as edges and textures."
+    ]
+  },
+
+  "What is a recurrent neural network (RNN)?": {
+    "answer": "An RNN is a neural network designed for sequence data using recurrent connections.",
+    "contexts": [
+      "RNNs maintain hidden states that capture temporal dependencies, making them suitable for time-series and text."
+    ]
+  },
+
+  "What is LSTM?": {
+    "answer": "LSTM is a type of RNN that fixes vanishing gradients using gating mechanisms.",
+    "contexts": [
+      "LSTM networks use input, output, and forget gates to retain long-term dependencies in sequential data."
+    ]
+  },
+
+  "What is a transformer model?": {
+    "answer": "A transformer is a neural architecture based on self-attention mechanisms.",
+    "contexts": [
+      "Transformers rely entirely on multi-head self-attention instead of recurrence or convolution."
+    ]
+  },
+
+  "Explain self-attention.": {
+    "answer": "Self-attention allows a model to weigh the importance of different tokens in a sequence.",
+    "contexts": [
+      "Self-attention computes attention scores between all token pairs, capturing contextual relationships."
+    ]
+  },
+
+  "What is tokenization in NLP?": {
+    "answer": "Tokenization is the process of splitting text into words, subwords, or characters.",
+    "contexts": [
+      "Tokenizers convert raw text into tokens that can be processed by NLP models."
+    ]
+  },
+
+  "What is BERT?": {
+    "answer": "BERT is a transformer-based model trained using masked language modeling.",
+    "contexts": [
+      "BERT uses bidirectional attention, enabling it to understand context from both left and right tokens."
+    ]
+  },
+
+  "What is fine-tuning?": {
+    "answer": "Fine-tuning trains a pre-trained model on a specific downstream task using labeled data.",
+    "contexts": [
+      "Fine-tuning adapts pre-trained representations by updating all or some layers to fit a target dataset."
+    ]
+  },
+
+  "What is zero-shot learning?": {
+    "answer": "Zero-shot learning enables a model to perform tasks without direct training examples.",
+    "contexts": [
+      "Large language models support zero-shot inference by leveraging general knowledge learned during pre-training."
+    ]
+  },
+
+  "What is a confusion matrix?": {
+    "answer": "A confusion matrix is a table summarizing correct and incorrect predictions.",
+    "contexts": [
+      "Confusion matrices show true positives, false positives, true negatives, and false negatives."
+    ]
+  },
+
+  "What is feature engineering?": {
+    "answer": "Feature engineering is the process of creating input features to improve model performance.",
+    "contexts": [
+      "Feature engineering extracts meaningful attributes from raw data to enhance predictive power."
+    ]
+  },
+
+  "What is reinforcement learning?": {
+    "answer": "Reinforcement learning is a learning paradigm where agents take actions to maximize cumulative reward.",
+    "contexts": [
+      "Reinforcement learning consists of states, actions, and rewards, allowing an agent to learn optimal policies."
+    ]
+  },
+
+  "What is the difference between classification and regression?": {
+    "answer": "Classification predicts discrete labels, while regression predicts continuous values.",
+    "contexts": [
+      "In classification, outputs belong to categories; in regression, outputs are numerical and continuous."
+    ]
+  }
+}
