@@ -48,7 +48,7 @@ Stay consistent, professional, and always focus on advancing the user's understa
 
 #Create Chat model 
 chat = ChatOpenAI(
-    model="deepseek/deepseek-r1:free",
+    model="meta-llama/llama-3.3-70b-instruct:free",
     temperature=0.6,
     max_tokens=2056,
     openai_api_key=os.getenv("OPENROUTER_API_KEY"),
