@@ -32,12 +32,113 @@ This repository contains a project implementing a **Retrieval-Augmented Generati
 - Provides a structured evaluation pipeline to ensure **reliable and trustworthy outputs**.
 
 ---
+## **Key dependencies include:**
+- `langchain` - LLM framework
+- `langchain-openai` - OpenAI integration
+- `chromadb` - Vector database
+- `streamlit` - Web interface
+- `sentence-transformers` - Embeddings
+- `wikipedia` - Data source
+---
+##  **Configuration:**
 
-## **Project Structure**
+### Configuration File (`config.py`)
 
-- `model.py` → Defines the LLM, system prompt, memory, and retrieval-aware question answering.  
-- `chroma_handler.py` → Handles Chroma database creation, loading, and query operations.  
-- `eval_test/` → Contains evaluation scripts using DeepEval and RAG metrics.  
-- `config.py` → Stores configuration variables, e.g., file paths and directories.  
+Key settings:
+
+```python
+# Topics for Wikipedia knowledge base
+TOPICS = [
+    "Artificial intelligence",
+    "Machine learning",
+    "Deep learning",
+    # ... more topics
+]
+
+# Chunking parameters
+CHUNK_SIZE = 1500          # Characters per chunk
+CHUNK_OVERLAP = 100        # Overlap between chunks
+MAX_DOCS_PER_TOPIC = 3     # Documents per topic
+MAX_CHARS_PER_DOC = 40_000 # Max characters per document
+
+# File paths
+DATA_DIR = "data/"
+CHROMA_DIR = "data/chroma_ai_db"
+```
+---
+
+## **Application Features**
+
+1. **Authentication**
+   - Sign up with username and password
+   - Login with existing credentials
+   - Passwords are hashed using SHA-256
+
+2. **Chat Interface**
+   - Ask AI/ML related questions
+   - System uses RAG to retrieve relevant documents
+   - Responses include context from knowledge base
+   - Chat history is saved per user
+
+3. **Knowledge Base**
+   - Searches 15 AI/ML Wikipedia topics
+   - Returns top 4 relevant documents
+   - Uses semantic search with embeddings
 
 ---
+
+##  **Core Components:**
+
+### `app4.py` - Main Application
+Streamlit-based web interface with:
+- Login/signup functionality
+- Chat UI with message history
+- User session management
+- Integration with RAG pipeline
+
+### `model.py` - LLM Configuration
+- **LLM**: OpenAI ChatGPT-4
+- **System Prompt**: AI/ML tutor specialization
+- **Memory**: Conversation buffer for context
+- **Response Generation**: With retrieval-augmented context
+
+### `rag_handler.py` - RAG Pipeline
+Orchestrates the retrieval-augmented generation:
+1. Query vector database
+2. Retrieve top-k documents (k=4)
+3. Pass context to LLM
+4. Generate response
+
+### `chroma_handler.py` - Vector Database
+- **Embedding Model**: BAAI/bge-base-en-v1.5
+- **Persistence**: SQLite-based storage
+- **Operations**: Load chunks, create/load database, query
+
+### `auth.py` - Authentication
+- SQLite database for users
+- Password hashing with SHA-256
+- Conversation storage per user
+- Session management
+
+### `config.py` - Configuration
+Centralized configuration for:
+- Topics and data sources
+- File paths
+- Chunking parameters
+- Model parameters
+
+### `load_data.py` - Data Loading
+- Wikipedia article fetching
+- Document chunking with NLTK
+- JSON serialization
+---
+##  **System Prompt Specialization:**
+
+The system is configured as an **AI/ML Educational Tutor** with:
+- Expertise in: AI, ML, Deep Learning, NLP, Computer Vision, Data Science
+- Response style: Clear, educational, practical
+- Boundaries: Declines non-technical questions
+- Focus: Learning and understanding
+
+---
+
